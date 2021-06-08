@@ -89,7 +89,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字數統計:</span>
-            <span class="post-count">415</span>
+            <span class="post-count">424</span>
         </span>
     </span>
 
@@ -113,7 +113,13 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="如何在-Jetbrains-IDE-中使用-Git-Blame-功能"><a href="#如何在-Jetbrains-IDE-中使用-Git-Blame-功能" class="headerlink" title="如何在 Jetbrains IDE 中使用 Git Blame 功能"></a>如何在 Jetbrains IDE 中使用 Git Blame 功能</h1><p>日前會知道有這個功能是因為朋友使用 vs code 時有裝類似的插件，分享給我後一開始以為是那個插件獨有的功能，後來得知 git 本來就有一個指令 <code>git blame</code> ，讓我開始研究在 Jetbarins 系列 IDE 中該不會也支援吧！</p>
+  <ul>
+<li>難度：簡單</li>
+<li>介紹 Git Blame</li>
+<li>Jetbrains IDE 的 Git Blame 功能圖文教學<span id="more"></span></li>
+</ul>
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>日前會知道有這個功能是因為朋友使用 vs code 時有裝類似的插件，分享給我後一開始以為是那個插件獨有的功能，後來得知 git 本來就有一個指令 <code>git blame</code> ，讓我開始研究在 Jetbarins 系列 IDE 中該不會也支援吧！</p>
 <p>一查之後還真的讓我找到，而且發覺意外的簡單，不過在開始教學前，還是得科普一下 Git Blame 吧：</p>
 <h2 id="Git-Blame-是什麼？"><a href="#Git-Blame-是什麼？" class="headerlink" title="Git Blame 是什麼？"></a>Git Blame 是什麼？</h2><p>常常在維護其他人寫的程式碼時，有時候我們會想看某一行 code 到底誰寫的，無論你想要好好請教一下程式碼的作者，或是在心裡問候一番，你都會很需要 Git Blame 這個功能，Git Blame 是 git 中原生就有的一個功能，它可以讓我們知道文件的<strong>每一行</strong>最後修改的<strong>版本</strong>和<strong>作者</strong>，但是若使用原生的指令，使用起來實在很麻煩，不一定每個人都喜歡純指令做每一件事。</p>
 <ul>
